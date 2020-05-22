@@ -1,11 +1,14 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
+@charset "UTF-8";
+body {
+  font-family: 　arial, helvetica, sans-serif;
   color: #E0C400;
-}  
-h1, #proche, footer, button{
+}
+
+h1, #proche, footer, button {
   background-color: #51B27A;
 }
-h1{
+
+h1 {
   font-size: 4em;
   text-align: center;
   margin-top: 0;
@@ -13,44 +16,63 @@ h1{
 }
 
 /* Menu
-_______*/
-
-section{
+  _______*/
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.box_menu{
-  box-shadow: 2px 2px 10px grey;
+.box_menu {
+  -webkit-box-shadow: 2px 2px 10px grey;
+          box-shadow: 2px 2px 10px grey;
   margin: 10px;
+  width: 80%;
+  height: 12em;
+  font-size: 6em;
+  text-align: center;
 }
 
 /* Prochainement (animation 3 petit point a suivre)
-_________________________________________________*/
-
-.container{
+  _________________________________________________*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 100px;
 }
-#proche{
+
+#proche {
   font-size: 2em;
-  padding: 20px;
+  padding: 20px 60px 20px 60px;
   border-radius: 10px;
 }
 
 /*Footer
-_______*/
-
-footer{
+  _______*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
   height: 70px;
 }
 
-button{
+button {
   color: #E0C400;
   font-size: 1.5em;
   border: #51B27A;
 }
+/*# sourceMappingURL=style.css.map */
