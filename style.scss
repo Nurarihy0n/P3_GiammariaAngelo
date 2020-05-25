@@ -1,20 +1,28 @@
 $text-color: #E0C400;
 $bg-color: #51B27A;
 $font-pg:　arial, helvetica, sans-serif;
+$titre-menu: black;
 
   body {
     font-family: $font-pg;
-    color: $text-color
   }
 
   h1, #proche, footer, button{
     background-color: $bg-color;
+    color: $text-color;;
   }
   h1{
     font-size: 4em;
     text-align: center;
     margin-top: 0;
     height: 150px;
+  }
+  /*PAGE DES MENUS
+  _______________*/
+
+  h2{
+    text-align: center;
+    color: $titre-menu;
   }
   
   /* Menu

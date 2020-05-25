@@ -1,11 +1,11 @@
 @charset "UTF-8";
 body {
   font-family: 　arial, helvetica, sans-serif;
-  color: #E0C400;
 }
 
 h1, #proche, footer, button {
   background-color: #51B27A;
+  color: #E0C400;
 }
 
 h1 {
@@ -13,6 +13,13 @@ h1 {
   text-align: center;
   margin-top: 0;
   height: 150px;
+}
+
+/*PAGE DES MENUS
+  _______________*/
+h2 {
+  text-align: center;
+  color: black;
 }
 
 /* Menu
