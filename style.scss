@@ -5,6 +5,7 @@ $titre-menu: black;
 
   body {
     font-family: $font-pg;
+    margin: 0;
   }
 
   h1, #proche, footer, button{
@@ -20,34 +21,45 @@ $titre-menu: black;
   /*PAGE DES MENUS
   _______________*/
   
-
+  .note_logo{
+    font-size: 6em;
+    text-align: center;
+    margin: 0;
+  }
   h2{
     text-align: center;
     color: $titre-menu;
     font-size: 4em;
+    margin-top: 0;
   }
   
   h3{
     text-align: center;
   }
-  .note-music{
-    text-align: center;
-  }
-  .all_menu{
-    
-  }
+  
   .plat-prix{
-    display: flex;
-    flex-direction: column;
     font-size: 2em;
   }
   .plat{
-    text-align: left;
+    text-align: center;
+    font-size: 0.8em;
   }
   .prix{
-    text-align: right;
+    font-weight: bold;
+    text-align: center;
   }
-  
+  .all_menu{
+    padding-bottom: 10em;
+    margin: auto 30px;
+  }
+  .tlt_menu{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 100px
+  }
+  .note-music{
+    font-size: 2em;
+  }
   /* Menu
   _______*/
   @mixin box-menu {
@@ -58,7 +70,7 @@ $titre-menu: black;
     font-size: 6em;
     text-align: center;
 }
-  section{
+  .mini-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,13 +107,13 @@ $titre-menu: black;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 70px;
+    height: 7em;
     position: fixed;
     bottom: 0;
   }
   
   button{
     color: #E0C400;
-    font-size: 1.5em;
+    font-size: 2.5em;
     border: #51B27A;
   }
