@@ -19,10 +19,33 @@ $titre-menu: black;
   }
   /*PAGE DES MENUS
   _______________*/
+  
 
   h2{
     text-align: center;
     color: $titre-menu;
+    font-size: 4em;
+  }
+  
+  h3{
+    text-align: center;
+  }
+  .note-music{
+    text-align: center;
+  }
+  .all_menu{
+    
+  }
+  .plat-prix{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+  }
+  .plat{
+    text-align: left;
+  }
+  .prix{
+    text-align: right;
   }
   
   /* Menu
@@ -40,14 +63,15 @@ $titre-menu: black;
     flex-direction: column;
     align-items: center;
   }
-  .rst-menu{
-    font-size: 2em;
-  }
-
+  
   .box{
       &_menu{
           @include box-menu;
       }
+  }
+
+  .rst-menu{
+    font-size: 2em;
   }
   
   /* Prochainement (animation 3 petit point a suivre)
