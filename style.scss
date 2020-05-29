@@ -48,14 +48,14 @@ $titre-menu: black;
   _______________*/
   
   .note_logo{
-    font-size: 6em;
+    font-size: 3em;
     text-align: center;
     margin: 0;
   }
   h2{
     text-align: center;
     color: $titre-menu;
-    font-size: 4em;
+    font-size: 2em;
     margin-top: 0;
   }
   
@@ -75,43 +75,33 @@ $titre-menu: black;
     text-align: center;
   }
   .all_menu{
-    padding-bottom: 10em;
+    padding-bottom: 5em;
     margin: auto 30px;
   }
   .tlt_menu{
-    font-size: 2.5em;
+    font-size: 1.9em;
     text-align: center;
-    margin: 100px
-  }
-  .note-music{
-    font-size: 2em;
+    margin-top: 50px
   }
   /* Menu
   _______*/
   @mixin box-menu {
     box-shadow: 2px 2px 10px grey;
-    margin: 10px;
-    width: 80%;
+    margin: 15px;
     height: 10em;
     font-size: 3em;
     text-align: center;
-}
-  /*.mini-menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }*/
-  
+  }
   .box{
       &_menu{
           @include box-menu;
       }
   }
-
-  .rst-menu{
-    font-size: 2em;
-  }
-
+  /*.mini_menu p{
+    margin-top: 0;
+    padding-top: 80px;
+  }*/
+  
   /* Prochainement (animation 3 petit point a suivre)
   _________________________________________________*/
   
@@ -124,7 +114,7 @@ $titre-menu: black;
     font-size: 2em;
     padding: 20px 30px 20px 30px;
     border-radius: 10px;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
   }
   
   /*Footer

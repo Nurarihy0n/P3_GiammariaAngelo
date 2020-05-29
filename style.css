@@ -47,7 +47,7 @@ h1 {
 /*PAGE DES MENUS
   _______________*/
 .note_logo {
-  font-size: 6em;
+  font-size: 3em;
   text-align: center;
   margin: 0;
 }
@@ -55,7 +55,7 @@ h1 {
 h2 {
   text-align: center;
   color: black;
-  font-size: 4em;
+  font-size: 2em;
   margin-top: 0;
 }
 
@@ -78,41 +78,31 @@ h3 {
 }
 
 .all_menu {
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   margin: auto 30px;
 }
 
 .tlt_menu {
-  font-size: 2.5em;
+  font-size: 1.9em;
   text-align: center;
-  margin: 100px;
-}
-
-.note-music {
-  font-size: 2em;
+  margin-top: 50px;
 }
 
 /* Menu
   _______*/
-/*.mini-menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }*/
 .box_menu {
   -webkit-box-shadow: 2px 2px 10px grey;
           box-shadow: 2px 2px 10px grey;
-  margin: 10px;
-  width: 80%;
+  margin: 15px;
   height: 10em;
   font-size: 3em;
   text-align: center;
 }
 
-.rst-menu {
-  font-size: 2em;
-}
-
+/*.mini_menu p{
+    margin-top: 0;
+    padding-top: 80px;
+  }*/
 /* Prochainement (animation 3 petit point a suivre)
   _________________________________________________*/
 .container {
@@ -129,7 +119,7 @@ h3 {
   font-size: 2em;
   padding: 20px 30px 20px 30px;
   border-radius: 10px;
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 
 /*Footer
