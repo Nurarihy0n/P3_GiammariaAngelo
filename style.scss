@@ -1,39 +1,45 @@
 @font-face {
-  font-family: 'Devonshire Regular';
+  font-family: 'DevonshireRegular';
   font-style: normal;
   font-weight: normal;
-  src: local('Devonshire Regular'), url('Fonts/Devonshire-Regular.woff') format('woff');
+  src: url('Fonts/Devonshire-Regular.woff') format('woff');
   }
 @font-face {
   font-family: 'DancingScript-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('DancingScript-Regular'), url('Fonts/DancingScript-Regular.otf') format('otf');
+  src: url('Fonts/DancingScript-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'CroissantOne-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('CroissantOne-Regular'), url('Fonts/CroissantOne-Regular.ttf') format('ttf');
+  src: url('Fonts/CroissantOne-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'KaushanScript-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('KaushanScript-Regular') url('Fonts/KaushanScript-Regulat.otf') format('otf');
+  src: url('Fonts/KaushanScript-Regular.otf') format('opentype');
 }
 
 $text-color: #E0C400;
 $bg-color: #51B27A;
-$font-pg:　arial, helvetica, sans-serif;
+$font-pg: arial, helvetica, sans-serif;
 $titre-menu: black;
-
+$font-enchante: DevonshireRegular, $font-pg;
+$bg-enchante: #FFF7E9;
+$font-chic: CroissantOne-Regular, $font-pg;
+$bg-chic: #FEF4FF;
+$font-papille: DancingScript-Regular, $font-pg;
+$bg-papille: #F8FCFF;
+$font-palette: KaushanScript-Regular, $font-pg;
+$bg-palette: #F7FFF6;
 
   body {
     font-family: $font-pg;
     margin: 0;
   }
-
   h1, #proche, footer, button{
     background-color: $bg-color;
     color: $text-color;;
@@ -76,12 +82,26 @@ $titre-menu: black;
   }
   .all_menu{
     padding-bottom: 5em;
-    margin: auto 30px;
+    margin: auto;
   }
   .tlt_menu{
     font-size: 1.9em;
     text-align: center;
     margin-top: 50px
+  }
+  /* Font and Color
+  ________________*/
+  .note_enchante{
+    font-family: $font-enchante;
+  }
+  .chic_francais{
+    font-family: $font-chic;
+  }
+  .delice_papille{
+    font-family: $font-papille;
+  }
+  .palette_gout{
+    font-family: $font-palette;
   }
   /* Menu
   _______*/
@@ -92,16 +112,33 @@ $titre-menu: black;
     font-size: 3em;
     text-align: center;
   }
+  a{
+    text-decoration: none;
+    color: black;
+  }
   .box{
       &_menu{
           @include box-menu;
       }
   }
-  /*.mini_menu p{
-    margin-top: 0;
-    padding-top: 80px;
-  }*/
-  
+  .menu{
+    &_one{
+      background-color: $bg-enchante;
+      font-family: $font-enchante;
+    }
+    &_two{
+      background-color: $bg-chic;
+      font-family: $font-chic;
+    }
+    &_three{
+      background-color: $bg-papille;
+      font-family: $font-papille;
+    }
+    &_four{
+      background-color: $bg-palette;
+      font-family: $font-palette;
+    }
+  }
   /* Prochainement (animation 3 petit point a suivre)
   _________________________________________________*/
   
@@ -130,7 +167,62 @@ $titre-menu: black;
   }
   
   button{
-    color: #E0C400;
+    color: $text-color;
     font-size: 1.5em;
-    border: #51B27A;
+    border: $bg-color;
+  }
+  footer a{
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  /*Media Queries Breakpoint Ecran ordinateur et plus 
+  _________________________________________________*/
+
+  @media all and (min-width: 982px){
+    
+    .mini_menu{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      min-width: 1060px;
+      margin: auto 50px;
+    }
+    .box_menu{
+      font-size: 2.5em;
+      height: 12em;
+      width: 10em;
+      margin: 30px;
+    }
+    .plat{
+      margin-left: 100px;
+    }
+    .prix{
+      min-width: 30%;
+    }
+    .note_enchante{
+      background-color: $bg-enchante;
+      font-size: 0.9em;
+    }
+    .chic_francais{
+      background-color: $bg-chic;
+      font-size: 0.6em;
+    }
+    .delice_papille{
+      background-color: $bg-papille;
+      font-size: 0.8em;
+    }
+    .palette_gout{
+      background-color: $bg-palette;
+      font-size: 0.7em;
+    }
+    .all_menu{
+        max-width: 900px;
+    }
+    .food_price{
+      display: flex;
+      justify-content: space-between;;
+      height: 80px;
+    }
+
   }
