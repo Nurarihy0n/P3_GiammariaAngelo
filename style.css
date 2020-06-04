@@ -62,7 +62,12 @@ h3 {
   text-align: center;
 }
 
-.plat-prix {
+.all_menu {
+  padding-bottom: 5em;
+  margin: auto;
+}
+
+.all_menu article {
   font-size: 2em;
 }
 
@@ -76,9 +81,9 @@ h3 {
   text-align: center;
 }
 
-.all_menu {
-  padding-bottom: 5em;
-  margin: auto;
+.dessert {
+  font-size: 0.8em;
+  text-align: center;
 }
 
 .tlt_menu {
@@ -188,6 +193,8 @@ footer a {
 /*Media Queries Breakpoint Ecran ordinateur et plus 
   _________________________________________________*/
 @media all and (min-width: 982px) {
+  /*Taille des menus et alignement page d'accueil
+    _____________________________________________*/
   .mini_menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,12 +213,16 @@ footer a {
     width: 10em;
     margin: 30px;
   }
-  .plat {
-    margin-left: 100px;
+  .rst_menu {
+    height: 12em;
   }
-  .prix {
-    min-width: 30%;
+  .rst_name {
+    margin-top: 0;
+    padding-top: 8rem;
+    font-size: 0.8em;
   }
+  /*Font et background menu
+    _______________________*/
   .note_enchante {
     background-color: #FFF7E9;
     font-size: 0.9em;
@@ -228,8 +239,16 @@ footer a {
     background-color: #F7FFF6;
     font-size: 0.7em;
   }
+  /* Mise en page des 4 menus 
+    ___________________________*/
   .all_menu {
     max-width: 900px;
+  }
+  .plat {
+    margin-left: 100px;
+  }
+  .prix {
+    min-width: 30%;
   }
   .food_price {
     display: -webkit-box;
@@ -239,6 +258,10 @@ footer a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 80px;
+  }
+  .dessert {
+    text-align: left;
+    margin-left: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
