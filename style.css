@@ -146,6 +146,51 @@ a {
   font-family: KaushanScript-Regular, arial, helvetica, sans-serif;
 }
 
+.chic_entree {
+  color: #DEA012;
+}
+
+.chic_plat {
+  color: #A467AE;
+}
+
+.chic_dessert {
+  color: #626AB9;
+}
+
+.dgd_tlt_chic, .menu_chic {
+  background: -webkit-gradient(linear, left top, right top, from(#DEA012), color-stop(#A467AE), to(#626AB9));
+  background: linear-gradient(to right, #DEA012, #A467AE, #626AB9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dgd_tlt_delice, .menu_delice {
+  background: -webkit-gradient(linear, left top, right top, from(#0046C8), color-stop(#0071D7), to(#00BEF5));
+  background: linear-gradient(to right, #0046C8, #0071D7, #00BEF5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dgd_tlt_palette, .menu_palette {
+  background: -webkit-gradient(linear, left top, right top, from(#30A700), to(#A6FF8D));
+  background: linear-gradient(to right, #30A700, #A6FF8D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_chic + p {
+  color: #DEA012;
+}
+
+.menu_delice + p {
+  color: #0046C8;
+}
+
+.menu_palette + p {
+  color: #30A700;
+}
+
 /* Prochainement (animation 3 petit point a suivre)
   _________________________________________________*/
 .container {
@@ -241,8 +286,14 @@ footer a {
   }
   /* Mise en page des 4 menus 
     ___________________________*/
+  .all_menu h2 {
+    font-size: 5em;
+    margin: 80px;
+  }
   .all_menu {
     max-width: 900px;
+    margin-bottom: 100px;
+    padding-top: 40px;
   }
   .plat {
     margin-left: 100px;
@@ -262,6 +313,7 @@ footer a {
   .dessert {
     text-align: left;
     margin-left: 100px;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

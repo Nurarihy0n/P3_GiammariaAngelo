@@ -35,6 +35,10 @@ $font-papille: DancingScript-Regular, $font-pg;
 $bg-papille: #F8FCFF;
 $font-palette: KaushanScript-Regular, $font-pg;
 $bg-palette: #F7FFF6;
+$bg_dgd_note: linear-gradient(to right, #EF361B, #F9B548);
+$bg_dgd_chic: linear-gradient(to right, #DEA012, #A467AE, #626AB9);
+$bg_dgd_delice: linear-gradient(to right, #0046C8, #0071D7, #00BEF5);
+$bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
 
   body {
     font-family: $font-pg;
@@ -115,6 +119,10 @@ $bg-palette: #F7FFF6;
     font-size: 3em;
     text-align: center;
   }
+  @mixin degrade {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   a{
     text-decoration: none;
     color: black;
@@ -141,6 +149,38 @@ $bg-palette: #F7FFF6;
       background-color: $bg-palette;
       font-family: $font-palette;
     }
+  }
+  .chic{
+    &_entree{
+    color: #DEA012;
+    }
+    &_plat{
+      color: #A467AE;
+    }
+    &_dessert{
+      color: #626AB9;
+    }
+  }
+  .dgd_tlt_chic, .menu_chic{
+    background: $bg_dgd_chic;
+    @include degrade;
+  }
+  .dgd_tlt_delice, .menu_delice{
+    background: $bg_dgd_delice;
+    @include degrade;
+  }
+  .dgd_tlt_palette, .menu_palette{
+    background: $bg_dgd_palette;
+    @include degrade;
+  }
+  .menu_chic + p{
+    color: #DEA012;
+  }
+  .menu_delice + p{
+    color: #0046C8;
+  }
+  .menu_palette + p{
+    color: #30A700;
   }
   /* Prochainement (animation 3 petit point a suivre)
   _________________________________________________*/
@@ -231,8 +271,14 @@ $bg-palette: #F7FFF6;
     /* Mise en page des 4 menus 
     ___________________________*/
 
+    .all_menu h2{
+      font-size: 5em;
+      margin: 80px;
+    }
     .all_menu{
       max-width: 900px;
+      margin-bottom: 100px;
+      padding-top: 40px;
   }
     .plat{
       margin-left: 100px;
@@ -248,6 +294,7 @@ $bg-palette: #F7FFF6;
     .dessert{
       text-align: left;
       margin-left: 100px;
+      padding: 10px;
     }
 
   }
