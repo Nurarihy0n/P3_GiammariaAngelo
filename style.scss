@@ -23,18 +23,18 @@
   src: url('Fonts/KaushanScript-Regular.otf') format('opentype');
 }
 
-$text-color: #E0C400;
-$bg-color: #51B27A;
+$text-color: #fdcb46;
+$bg-color: #579c87;
 $font-pg: arial, helvetica, sans-serif;
 $titre-menu: black;
 $font-enchante: DevonshireRegular, $font-pg;
-$bg-enchante: #FFF7E9;
+$bg-enchante: #fcdfdb;
 $font-chic: CroissantOne-Regular, $font-pg;
-$bg-chic: #FEF4FF;
+$bg-chic: #fff5fe;
 $font-papille: DancingScript-Regular, $font-pg;
-$bg-papille: #F8FCFF;
+$bg-papille: #edefef;
 $font-palette: KaushanScript-Regular, $font-pg;
-$bg-palette: #F7FFF6;
+$bg-palette: #fdfffd;
 $bg_dgd_note: linear-gradient(to right, #EF361B, #F9B548);
 $bg_dgd_chic: linear-gradient(to right, #DEA012, #A467AE, #626AB9);
 $bg_dgd_delice: linear-gradient(to right, #0046C8, #0071D7, #00BEF5);
@@ -46,7 +46,7 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   }
   h1, #proche, footer, button{
     background-color: $bg-color;
-    color: $text-color;;
+    color: $text-color;
   }
   h1{
     font-size: 4em;
@@ -56,7 +56,6 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   }
   /*PAGE DES MENUS
   _______________*/
-  
   .note_logo{
     font-size: 3em;
     text-align: center;
@@ -110,8 +109,8 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   .palette_gout{
     font-family: $font-palette;
   }
-  /* Menu
-  _______*/
+  /* Menu page d'accueil
+  _____________________*/
   @mixin box-menu {
     box-shadow: 2px 2px 10px grey;
     margin: 15px;
@@ -131,6 +130,10 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
       &_menu{
           @include box-menu;
       }
+  }
+  .rst_name{
+    margin-top: 0;
+    padding-top: 80px;
   }
   .menu{
     &_one{
@@ -173,14 +176,23 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     background: $bg_dgd_palette;
     @include degrade;
   }
+  svg{
+    color: $bg_dgd_note;
+  }
   .menu_chic + p{
     color: #DEA012;
+    font-size: 1.3em;
   }
   .menu_delice + p{
     color: #0046C8;
+    font-size: 1.3em;
   }
   .menu_palette + p{
     color: #30A700;
+    font-size: 1.3em;
+  }
+  .rst_name + p{
+    margin-top: 0;
   }
   /* Prochainement (animation 3 petit point a suivre)
   _________________________________________________*/
@@ -208,7 +220,9 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     position: fixed;
     bottom: 0;
   }
-  
+  form{
+    margin: auto;
+  }
   button{
     color: $text-color;
     font-size: 1.5em;
@@ -245,8 +259,8 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     }
     .rst_name{
       margin-top: 0;
-      padding-top: 8rem;
-      font-size: 0.8em;
+      padding-top: 10rem;
+      font-size: 0.7em;
     }
 
     /*Font et background menu
@@ -297,4 +311,29 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
       padding: 10px;
     }
 
+    /*ANIMATION BONTON 
+    ________________*/
+    button{
+      &:hover{
+        animation: headshake 100ms 2;
+      }
+    }
+    @keyframes headshake {
+      25% {
+          transform: translateX(2%);
+      }
+      75% {
+          transform: translateX(2% * -1);
+      }
+    }
+    /*ANIMATION MENU (FONDU ET GROSSISSEMENT)
+    ______________________________________*/
+    .rst_menu{
+      transform: scale(1);
+      transition: transform 100ms;
+      &:hover {
+        transform: scale(1.20);
+      }
+    }
+    
   }

@@ -32,8 +32,8 @@ body {
 }
 
 h1, #proche, footer, button {
-  background-color: #51B27A;
-  color: #E0C400;
+  background-color: #579c87;
+  color: #fdcb46;
 }
 
 h1 {
@@ -110,8 +110,8 @@ h3 {
   font-family: KaushanScript-Regular, arial, helvetica, sans-serif;
 }
 
-/* Menu
-  _______*/
+/* Menu page d'accueil
+  _____________________*/
 a {
   text-decoration: none;
   color: black;
@@ -126,23 +126,28 @@ a {
   text-align: center;
 }
 
+.rst_name {
+  margin-top: 0;
+  padding-top: 80px;
+}
+
 .menu_one {
-  background-color: #FFF7E9;
+  background-color: #fcdfdb;
   font-family: DevonshireRegular, arial, helvetica, sans-serif;
 }
 
 .menu_two {
-  background-color: #FEF4FF;
+  background-color: #fff5fe;
   font-family: CroissantOne-Regular, arial, helvetica, sans-serif;
 }
 
 .menu_three {
-  background-color: #F8FCFF;
+  background-color: #edefef;
   font-family: DancingScript-Regular, arial, helvetica, sans-serif;
 }
 
 .menu_four {
-  background-color: #F7FFF6;
+  background-color: #fdfffd;
   font-family: KaushanScript-Regular, arial, helvetica, sans-serif;
 }
 
@@ -179,16 +184,27 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+svg {
+  color: linear-gradient(to right, #EF361B, #F9B548);
+}
+
 .menu_chic + p {
   color: #DEA012;
+  font-size: 1.3em;
 }
 
 .menu_delice + p {
   color: #0046C8;
+  font-size: 1.3em;
 }
 
 .menu_palette + p {
   color: #30A700;
+  font-size: 1.3em;
+}
+
+.rst_name + p {
+  margin-top: 0;
 }
 
 /* Prochainement (animation 3 petit point a suivre)
@@ -224,15 +240,19 @@ footer {
   bottom: 0;
 }
 
+form {
+  margin: auto;
+}
+
 button {
-  color: #E0C400;
+  color: #fdcb46;
   font-size: 1.5em;
-  border: #51B27A;
+  border: #579c87;
 }
 
 footer a {
   text-decoration: none;
-  color: #E0C400;
+  color: #fdcb46;
 }
 
 /*Media Queries Breakpoint Ecran ordinateur et plus 
@@ -263,25 +283,25 @@ footer a {
   }
   .rst_name {
     margin-top: 0;
-    padding-top: 8rem;
-    font-size: 0.8em;
+    padding-top: 10rem;
+    font-size: 0.7em;
   }
   /*Font et background menu
     _______________________*/
   .note_enchante {
-    background-color: #FFF7E9;
+    background-color: #fcdfdb;
     font-size: 0.9em;
   }
   .chic_francais {
-    background-color: #FEF4FF;
+    background-color: #fff5fe;
     font-size: 0.6em;
   }
   .delice_papille {
-    background-color: #F8FCFF;
+    background-color: #edefef;
     font-size: 0.8em;
   }
   .palette_gout {
-    background-color: #F7FFF6;
+    background-color: #fdfffd;
     font-size: 0.7em;
   }
   /* Mise en page des 4 menus 
@@ -314,6 +334,46 @@ footer a {
     text-align: left;
     margin-left: 100px;
     padding: 10px;
+  }
+  /*ANIMATION BONTON 
+    ________________*/
+  button:hover {
+    -webkit-animation: headshake 100ms 2;
+            animation: headshake 100ms 2;
+  }
+  @-webkit-keyframes headshake {
+    25% {
+      -webkit-transform: translateX(2%);
+              transform: translateX(2%);
+    }
+    75% {
+      -webkit-transform: translateX(-2%);
+              transform: translateX(-2%);
+    }
+  }
+  @keyframes headshake {
+    25% {
+      -webkit-transform: translateX(2%);
+              transform: translateX(2%);
+    }
+    75% {
+      -webkit-transform: translateX(-2%);
+              transform: translateX(-2%);
+    }
+  }
+  /*ANIMATION MENU (FONDU ET GROSSISSEMENT)
+    ______________________________________*/
+  .rst_menu {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 100ms;
+    transition: -webkit-transform 100ms;
+    transition: transform 100ms;
+    transition: transform 100ms, -webkit-transform 100ms;
+  }
+  .rst_menu:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 /*# sourceMappingURL=style.css.map */
