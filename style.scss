@@ -342,5 +342,11 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
         transform: scale(1.20);
       }
     }
-    
+    .box_menu{
+      opacity: 1;
+      transition: 150ms;
+      &:hover{
+        opacity: 0.2;
+      }
+    }
   }

@@ -383,5 +383,13 @@ footer a {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
+  .box_menu {
+    opacity: 1;
+    -webkit-transition: 150ms;
+    transition: 150ms;
+  }
+  .box_menu:hover {
+    opacity: 0.2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
