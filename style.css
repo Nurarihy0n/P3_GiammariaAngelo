@@ -62,7 +62,7 @@ h3 {
   text-align: center;
 }
 
-h3 img {
+img {
   display: none;
 }
 
@@ -339,9 +339,17 @@ footer a {
     margin-left: 100px;
     padding: 10px;
   }
-  h3 img {
+  .bord {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bord img {
     display: initial;
     width: 250px;
+  }
+  .bord p, h3 {
+    margin: auto;
   }
   /*ANIMATION BONTON 
     ________________*/
@@ -390,6 +398,48 @@ footer a {
   }
   .box_menu:hover {
     opacity: 0.2;
+  }
+  /* ANIMATION SOULIGNEMENT 
+    _______________________*/
+  .anim-under {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(10%, black), color-stop(10.01%, transparent)) no-repeat;
+    background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat;
+    background-size: 0 100%;
+    -webkit-transition: background-size .3s;
+    transition: background-size .3s;
+  }
+  .anim-under:hover {
+    background-size: 100% 100%;
+  }
+  .anim-under-O {
+    background: -webkit-gradient(linear, left bottom, left top, from(#DEA012), color-stop(10%, #DEA012), color-stop(10.01%, transparent)) no-repeat;
+    background: linear-gradient(to top, #DEA012 0%, #DEA012 10%, transparent 10.01%) no-repeat;
+    background-size: 0 100%;
+    -webkit-transition: background-size .3s;
+    transition: background-size .3s;
+  }
+  .anim-under-O:hover {
+    background-size: 100% 100%;
+  }
+  .anim-under-P {
+    background: -webkit-gradient(linear, left bottom, left top, from(#A467AE), color-stop(10%, #A467AE), color-stop(10.01%, transparent)) no-repeat;
+    background: linear-gradient(to top, #A467AE 0%, #A467AE 10%, transparent 10.01%) no-repeat;
+    background-size: 0 100%;
+    -webkit-transition: background-size .3s;
+    transition: background-size .3s;
+  }
+  .anim-under-P:hover {
+    background-size: 100% 100%;
+  }
+  .anim-under-B {
+    background: -webkit-gradient(linear, left bottom, left top, from(#626AB9), color-stop(10%, #626AB9), color-stop(10.01%, transparent)) no-repeat;
+    background: linear-gradient(to top, #626AB9 0%, #626AB9 10%, transparent 10.01%) no-repeat;
+    background-size: 0 100%;
+    -webkit-transition: background-size .3s;
+    transition: background-size .3s;
+  }
+  .anim-under-B:hover {
+    background-size: 100% 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

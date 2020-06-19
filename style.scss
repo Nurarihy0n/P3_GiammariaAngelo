@@ -71,7 +71,7 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   h3{
     text-align: center;
   }
-  h3 img{
+  img{
     display: none;
   }
   .all_menu{
@@ -313,9 +313,15 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
       margin-left: 100px;
       padding: 10px;
     }
-    h3 img{
+    .bord{
+      display: flex;
+    }
+    .bord img{
       display: initial;
       width: 250px;
+    }
+    .bord p, h3{
+      margin: auto;
     }
 
     /*ANIMATION BONTON 
@@ -349,4 +355,36 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
         opacity: 0.2;
       }
     }
-  }
+    /* ANIMATION SOULIGNEMENT 
+    _______________________*/
+    .anim-under{
+      background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size .3s;
+      &:hover{
+        background-size: 100% 100%;
+      }
+    }
+    .anim-under-O{
+      background: linear-gradient(to top, #DEA012 0%, #DEA012 10%, transparent 10.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size .3s;
+      &:hover{
+        background-size: 100% 100%;
+      }
+    }.anim-under-P{
+      background: linear-gradient(to top, #A467AE 0%, #A467AE 10%, transparent 10.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size .3s;
+      &:hover{
+        background-size: 100% 100%;
+      }
+    }.anim-under-B{
+      background: linear-gradient(to top, #626AB9 0%, #626AB9 10%, transparent 10.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size .3s;
+      &:hover{
+        background-size: 100% 100%;
+      }
+    }
+   }
