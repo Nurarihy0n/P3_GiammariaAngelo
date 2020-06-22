@@ -188,10 +188,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-svg {
-  color: linear-gradient(to right, #EF361B, #F9B548);
-}
-
 .menu_chic + p {
   color: #DEA012;
   font-size: 1.3em;
@@ -211,8 +207,8 @@ svg {
   margin-top: 0;
 }
 
-/* Prochainement (animation 3 petit point a suivre)
-  _________________________________________________*/
+/* Prochainement (animation 3 points)
+  ___________________________________*/
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,10 +220,29 @@ svg {
 }
 
 #proche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 2em;
-  padding: 20px 30px 20px 30px;
+  padding: 3px 20px;
   border-radius: 10px;
   margin-bottom: 1.5em;
+}
+
+.sms_style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.point {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: auto 2px;
+  background-color: #fdcb46;
 }
 
 /*Footer
@@ -440,6 +455,36 @@ footer a {
   }
   .anim-under-B:hover {
     background-size: 100% 100%;
+  }
+  /*ANIMATION POINT EN SUSPENSION
+    _____________________________*/
+  .dot_one {
+    -webkit-animation: clignote 3000ms infinite;
+            animation: clignote 3000ms infinite;
+  }
+  .dot_two {
+    -webkit-animation: clignote 3000ms 200ms infinite;
+            animation: clignote 3000ms 200ms infinite;
+  }
+  .dot_three {
+    -webkit-animation: clignote 3000ms 400ms infinite;
+            animation: clignote 3000ms 400ms infinite;
+  }
+  @-webkit-keyframes clignote {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+  }
+  @keyframes clignote {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
   }
 }
 /*# sourceMappingURL=style.css.map */

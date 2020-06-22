@@ -179,9 +179,6 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     background: $bg_dgd_palette;
     @include degrade;
   }
-  svg{
-    color: $bg_dgd_note;
-  }
   .menu_chic + p{
     color: #DEA012;
     font-size: 1.3em;
@@ -197,8 +194,8 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   .rst_name + p{
     margin-top: 0;
   }
-  /* Prochainement (animation 3 petit point a suivre)
-  _________________________________________________*/
+  /* Prochainement (animation 3 points)
+  ___________________________________*/
   
   .container{
     display: flex;
@@ -206,12 +203,26 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     padding: 100px;
   }
   #proche{
+    display: flex;
     font-size: 2em;
-    padding: 20px 30px 20px 30px;
+    padding: 3px 20px;
     border-radius: 10px;
     margin-bottom: 1.5em;
   }
-  
+  .sms_style{
+    display: flex;
+    margin-left: 5px;
+    margin-top: 5px;
+
+  }
+  .point{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: auto 2px;
+    background-color: $text-color;
+  }
+
   /*Footer
   _______*/
   
@@ -386,5 +397,24 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
       &:hover{
         background-size: 100% 100%;
       }
+    }
+    /*ANIMATION POINT EN SUSPENSION
+    _____________________________*/
+    .dot{
+      &_one{
+      animation: clignote 3000ms infinite;
+      }
+      &_two{
+      animation: clignote 3000ms 200ms infinite;
+      }
+      &_three{
+      animation: clignote 3000ms 400ms infinite;
+      }
+    }
+
+    @keyframes clignote {
+      0% {opacity: 0;}
+      75% {opacity: 1;}
+      // 100% {opacity: 1;}
     }
    }
