@@ -56,18 +56,12 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   }
   /*PAGE DES MENUS
   _______________*/
-  .note_logo{
-    font-size: 3em;
-    text-align: center;
-    margin: 0;
-  }
   h2{
     text-align: center;
     color: $titre-menu;
     font-size: 2em;
     margin-top: 0;
   }
-  
   h3{
     text-align: center;
   }
@@ -94,7 +88,7 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     text-align: center;
   }
   .tlt_menu{
-    font-size: 1.9em;
+    font-size: 3em;
     text-align: center;
     margin-top: 50px
   }
@@ -137,6 +131,11 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   .rst_name{
     margin-top: 0;
     padding-top: 80px;
+  }
+  .img-croche{
+    display: initial;
+    width: 2em;
+    margin-top: 30px;
   }
   .menu{
     &_one{
@@ -194,8 +193,8 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
   .rst_name + p{
     margin-top: 0;
   }
-  /* Prochainement (animation 3 points)
-  ___________________________________*/
+  /* Div Prochainement
+  __________________*/
   
   .container{
     display: flex;
@@ -271,10 +270,14 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     .rst_menu{
       height: 12em;
     }
-    .rst_name{
+    .rst{
+      margin-top: 0;
+      padding-top: 1em;
+      &_name{
       margin-top: 0;
       padding-top: 10rem;
       font-size: 0.7em;
+      }
     }
 
     /*Font et background menu
@@ -299,6 +302,9 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     /* Mise en page des 4 menus 
     ___________________________*/
 
+    .note_logo{
+      text-align: center;
+    }
     .all_menu h2{
       font-size: 5em;
       margin: 80px;
@@ -307,7 +313,11 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
       max-width: 900px;
       margin-bottom: 100px;
       padding-top: 40px;
-  }
+    }
+    .note_enchante h2
+    {
+      margin-top: 0;
+    }
     .plat{
       margin-left: 100px;
     }
@@ -334,7 +344,13 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     .bord p, h3{
       margin: auto;
     }
-
+    .note_music_top, .note_music_btm{
+      display: initial;
+    }
+    .note_music_btm{
+      width: 2em;
+      margin: -10px 10px;
+    }
     /*ANIMATION BONTON 
     ________________*/
     button{
