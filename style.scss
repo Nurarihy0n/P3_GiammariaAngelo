@@ -245,6 +245,22 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     text-decoration: none;
     color: $text-color;
   }
+  /* Mention Legales
+  ________________*/
+  .projet-oc{
+    text-align: center;
+  }
+  .projet_oc{
+    background: $bg-color;
+    width: 80%;
+    margin: auto;
+    border-radius: 40px;
+    padding: 20px;
+  }
+  .projet_oc p{
+    font-size: 2.5em;
+    color: $text-color;
+  }
 
   /*-----------------------------------------Media Queries Breakpoint Ecran ordinateur et plus----------------------------------------------- 
   __________________________________________________________________________________________________________________________________________*/
@@ -351,21 +367,6 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
       width: 2em;
       margin: -10px 10px;
     }
-    /*ANIMATION BONTON 
-    ________________*/
-    button{
-      &:hover{
-        animation: headshake 100ms 2;
-      }
-    }
-    @keyframes headshake {
-      25% {
-          transform: translateX(2%);
-      }
-      75% {
-          transform: translateX(2% * -1);
-      }
-    }
     /*ANIMATION MENU (FONDU ET GROSSISSEMENT)
     ______________________________________*/
     .rst_menu{
@@ -382,6 +383,40 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
         opacity: 0.2;
       }
     }
+     /*ANIMATION BONTON 
+    ________________*/
+    button{
+      &:hover{
+        animation: headshake 100ms 2;
+      }
+    }
+    @keyframes headshake {
+      25% {
+          transform: translateX(2%);
+      }
+      75% {
+          transform: translateX(2% * -1);
+      }
+    }
+    /*ANIMATION POINT EN SUSPENSION
+    _____________________________*/
+    .dot{
+      &_one{
+      animation: clignote 3000ms infinite;
+      }
+      &_two{
+      animation: clignote 3000ms 200ms infinite;
+      }
+      &_three{
+      animation: clignote 3000ms 400ms infinite;
+      }
+    }
+
+    @keyframes clignote {
+      0% {opacity: 0;}
+      75% {opacity: 1;}
+    }
+   }
     /* ANIMATION SOULIGNEMENT 
     _______________________*/
     .anim-under{
@@ -414,22 +449,3 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
         background-size: 100% 100%;
       }
     }
-    /*ANIMATION POINT EN SUSPENSION
-    _____________________________*/
-    .dot{
-      &_one{
-      animation: clignote 3000ms infinite;
-      }
-      &_two{
-      animation: clignote 3000ms 200ms infinite;
-      }
-      &_three{
-      animation: clignote 3000ms 400ms infinite;
-      }
-    }
-
-    @keyframes clignote {
-      0% {opacity: 0;}
-      75% {opacity: 1;}
-    }
-   }
