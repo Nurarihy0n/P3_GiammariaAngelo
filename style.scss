@@ -132,6 +132,9 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     margin-top: 0;
     padding-top: 80px;
   }
+  .rst_menu{
+    height: 10em;
+  }
   .img-croche{
     display: initial;
     width: 2em;
@@ -262,8 +265,16 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
     color: $text-color;
   }
 
-  /*-----------------------------------------Media Queries Breakpoint Ecran ordinateur et plus----------------------------------------------- 
+  /*-------------------------------------Media Queries Breakpoint Tablette & Ecran ordinateur et plus--------------------------------------- 
   __________________________________________________________________________________________________________________________________________*/
+
+  @media all and (min-width: 768px){
+    .box_menu{
+      height: 12em;
+      width: 10em;
+      margin: 50px auto;
+    }
+  }
 
   @media all and (min-width: 982px){
 
@@ -274,7 +285,6 @@ $bg_dgd_palette: linear-gradient(to right, #30A700, #A6FF8D);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      min-width: 1060px;
       margin: auto 50px;
     }
     .box_menu{
